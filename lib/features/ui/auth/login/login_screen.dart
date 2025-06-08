@@ -3,6 +3,7 @@ import 'package:e_commerce_app/core/utils/app_colors.dart';
 import 'package:e_commerce_app/core/utils/validators.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../widgets/custom_elevated_button.dart';
@@ -18,10 +19,10 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   TextEditingController userNameController = TextEditingController(
-    text: "nada@gmail.com",
+
   );
   TextEditingController passwordController = TextEditingController(
-    text: "1234567899",
+
   );
   var formKey = GlobalKey<FormState>();
 
@@ -94,7 +95,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               controller: passwordController,
                               validator: (text) {
                                 AppValidators.validatePassword(
-                                  passwordController.text,
+                                    passwordController.text
                                 );
                                 return null;
                               },

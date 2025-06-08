@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'app_colors.dart';
 import 'app_styles.dart';
 
 class DialogUtils {
@@ -14,7 +15,7 @@ class DialogUtils {
         return AlertDialog(
           content: Row(
             children: [
-              const CircularProgressIndicator(),
+              const CircularProgressIndicator(color: AppColors.primaryColor),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(message, style: AppStyles.medium18Header),

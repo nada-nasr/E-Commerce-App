@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_styles.dart';
 
@@ -50,7 +51,7 @@ class CustomTextField extends StatelessWidget {
       obscuringCharacter: '*',
       controller: controller,
       validator: validator,
-      cursorColor: AppColors.whiteColor,
+      cursorColor: AppColors.primaryColor,
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
